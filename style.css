@@ -1,0 +1,38 @@
+#text {
+   color:black;
+   padding: -10px;
+ }
+
+body {
+    margin: 0;
+   }
+
+.nure {
+    border-radius: 0 10px 10px 0;
+    width: 300px;
+    background:#ffda8a;
+    position: fixed; 
+    min-height: 100px; 
+    top: 100px; left: -320px;
+    border-right: 20px solid rgb(255, 153, 0);
+    padding: 10px;
+    transition: left 1s;
+}
+
+.nure img {
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.nure::after {
+    content: 'Contacts';
+    color: #000; 
+    position: absolute;
+    right: -40px; bottom: 50px;
+    transform: rotate(-90deg); 
+    -webkit-transform: rotate(-90deg);
+}
+
+.nure:hover {
+    left: 0;
+}
